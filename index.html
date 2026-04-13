@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shift Planner — Demo 25 Workers Apr 2026</title>
+    <title>Shift Planner V2</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f7f6; margin: 20px; font-size: 13px; }
         h1, h2 { color: #333; margin-top: 0; }
@@ -260,29 +260,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-</head>
-<body>
 <script id="__demo_seed__">
 (function(){
   try {
-    var seeded = "{\"2026-04\":{\"workers\":[{\"name\":\"AAA\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8L\",\"8E\",\"8M\",\"-\",\"-\",\"-\",\"8L\",\"8L\",\"8M\",\"8E\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"8E\",\"8M\",\"-\",\"-\",\"8E\",\"8L\",\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"VAC\",\"8E\",\"8L\",\"VAC\"],\"requests\":[true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAB\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"VAC\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"8M\",\"-\",\"-\",\"8E\",\"8E\",\"8E\",\"8L\",\"8E\",\"-\",\"-\",\"8L\",\"8M\",\"VAC\",\"8E\",\"8L\",\"-\",\"-\",\"8E\",\"8M\",\"8L\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"M\u00dcLLER C.\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8M\",\"8L\",\"8E\",\"-\",\"-\",\"-\",\"8E\",\"8E\",\"SICK\",\"8L\",\"-\",\"-\",\"8M\",\"8L\",\"8L\",\"8E\",\"VAC\",\"-\",\"-\",\"8E\",\"8L\",\"VAC\",\"8L\",\"8L\",\"-\",\"-\",\"8E\",\"8E\",\"8L\",\"8M\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAD\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8L\",\"8E\",\"8E\",\"-\",\"-\",\"-\",\"8L\",\"8L\",\"8L\",\"8M\",\"-\",\"-\",\"8E\",\"VAC\",\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"VAC\",\"8E\",\"8E\",\"8L\",\"8M\",\"-\",\"-\",\"8E\",\"8L\",\"8M\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAE\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8L\",\"8L\",\"8M\",\"-\",\"-\",\"-\",\"8E\",\"VAC\",\"8M\",\"8L\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"8L\",\"8E\",\"-\",\"-\",\"8M\",\"8E\",\"8E\",\"8E\",\"VAC\",\"-\",\"-\",\"8M\",\"8L\",\"8M\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAF\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":0,\"summerMonths\":[5,6,7,8],\"shifts\":[\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8E\",\"8L\",\"8M\",\"-\",\"-\",\"8L\",\"VAC\",\"8L\",\"8M\",\"8E\",\"-\",\"-\",\"8E\",\"8L\",\"8E\",\"8E\",\"8M\",\"-\",\"-\",\"VAC\",\"8L\",\"8E\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAG\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":1,\"summerMonths\":[5,6,7,8],\"shifts\":[\"VAC\",\"8L\",\"8E\",\"-\",\"-\",\"-\",\"8E\",\"8M\",\"8L\",\"8E\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"8E\",\"8M\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"VAC\",\"8E\",\"-\",\"-\",\"8E\",\"8M\",\"8L\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAH\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":2,\"summerMonths\":[5,6,7,8],\"shifts\":[\"8L\",\"8L\",\"8E\",\"-\",\"-\",\"-\",\"8M\",\"8L\",\"8L\",\"8M\",\"-\",\"-\",\"8E\",\"8E\",\"VAC\",\"8M\",\"8L\",\"-\",\"-\",\"VAC\",\"8E\",\"8L\",\"8E\",\"8M\",\"-\",\"-\",\"8L\",\"8E\",\"8E\",\"8L\"],\"requests\":[true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAI\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8E\",\"8L\",\"8L\",\"-\",\"-\",\"OFF\",\"8M\",\"8M\",\"8E\",\"8L\",\"-\",\"-\",\"OFF\",\"8E\",\"8E\",\"8L\",\"8E\",\"-\",\"-\",\"OFF\",\"8M\",\"8E\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAJ\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8M\",\"8E\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8M\",\"8L\",\"8E\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"8M\",\"8E\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"8L\",\"8E\",\"-\",\"-\",\"8M\",\"8E\",\"8E\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAK\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8M\",\"8L\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8L\",\"8M\",\"8L\",\"-\",\"-\",\"8E\",\"8E\",\"8E\",\"8L\",\"8L\",\"-\",\"-\",\"8M\",\"8E\",\"8L\",\"8M\",\"8E\",\"-\",\"-\",\"8E\",\"8L\",\"8E\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAL\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"8L\",\"8M\",\"-\",\"-\",\"-\",\"8L\",\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"OFF\",\"8L\",\"8E\",\"VAC\",\"8L\",\"-\",\"-\",\"OFF\",\"8L\",\"8L\",\"8M\",\"VAC\",\"-\",\"-\",\"OFF\",\"8L\",\"8L\",\"8M\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAM\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"8M\",\"OFF\",\"-\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"OFF\",\"-\",\"-\",\"8E\",\"8E\",\"VAC\",\"8E\",\"OFF\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"VAC\",\"OFF\",\"-\",\"-\",\"8E\",\"8E\",\"8L\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAN\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[4],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"VAC\",\"OFF\",\"8L\",\"-\",\"-\",\"-\",\"8M\",\"8L\",\"OFF\",\"8M\",\"-\",\"-\",\"8E\",\"8E\",\"VAC\",\"OFF\",\"8L\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"OFF\",\"8E\",\"-\",\"-\",\"8L\",\"8M\",\"8L\",\"OFF\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAO\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"-\",\"OFF\",\"VAC\",\"VAC\",\"8E\",\"-\",\"-\",\"SICK\",\"OFF\",\"8L\",\"8M\",\"8L\",\"-\",\"-\",\"8E\",\"OFF\",\"8E\",\"8L\",\"8M\",\"-\",\"-\",\"8L\",\"OFF\",\"8L\",\"8E\"],\"requests\":[true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAP\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1,4],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"VAC\",\"OFF\",\"8L\",\"-\",\"-\",\"-\",\"8M\",\"8E\",\"OFF\",\"8E\",\"-\",\"-\",\"OFF\",\"VAC\",\"8E\",\"OFF\",\"8L\",\"-\",\"-\",\"OFF\",\"8L\",\"8M\",\"OFF\",\"8E\",\"-\",\"-\",\"OFF\",\"8E\",\"8M\",\"OFF\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAQ\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"VAC\",\"8L\",\"OFF\",\"-\",\"-\",\"-\",\"OFF\",\"8E\",\"8E\",\"OFF\",\"-\",\"-\",\"8M\",\"OFF\",\"VAC\",\"8L\",\"OFF\",\"-\",\"-\",\"8M\",\"OFF\",\"8M\",\"8L\",\"OFF\",\"-\",\"-\",\"8E\",\"OFF\",\"8M\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAR\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[3,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"OFF\",\"8L\",\"OFF\",\"-\",\"-\",\"-\",\"8E\",\"OFF\",\"VAC\",\"OFF\",\"-\",\"-\",\"8E\",\"VAC\",\"OFF\",\"8L\",\"OFF\",\"-\",\"-\",\"8M\",\"8E\",\"OFF\",\"8L\",\"OFF\",\"-\",\"-\",\"8M\",\"8E\",\"OFF\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAS\",\"system\":\"New\",\"contract\":\"22\",\"pref\":\"Early\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2,3],\"fixed6HDay\":1,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"OFF\",\"8E\",\"8E\",\"-\",\"-\",\"-\",\"OFF\",\"OFF\",\"8E\",\"8E\",\"-\",\"-\",\"6H\",\"OFF\",\"OFF\",\"8E\",\"8E\",\"-\",\"-\",\"6H\",\"OFF\",\"OFF\",\"8E\",\"8E\",\"-\",\"-\",\"6H\",\"OFF\",\"OFF\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAT\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Early\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[3,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"OFF\",\"8E\",\"OFF\",\"-\",\"-\",\"-\",\"8E\",\"OFF\",\"8E\",\"OFF\",\"-\",\"-\",\"8E\",\"8M\",\"OFF\",\"8M\",\"OFF\",\"-\",\"-\",\"8E\",\"8E\",\"OFF\",\"VAC\",\"OFF\",\"-\",\"-\",\"8E\",\"VAC\",\"OFF\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAU\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Late\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"VAC\",\"8L\",\"8L\",\"-\",\"-\",\"-\",\"8L\",\"8L\",\"8L\",\"8L\",\"-\",\"-\",\"8M\",\"8L\",\"8L\",\"8M\",\"8L\",\"-\",\"-\",\"8L\",\"8L\",\"8M\",\"8L\",\"VAC\",\"-\",\"-\",\"8L\",\"8L\",\"SICK\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAV\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[2,3],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"OFF\",\"ImL\",\"ImL\",\"-\",\"-\",\"-\",\"OFF\",\"OFF\",\"ImL\",\"ImE\",\"-\",\"-\",\"ImE\",\"OFF\",\"OFF\",\"ImL\",\"ImL\",\"-\",\"-\",\"ImL\",\"OFF\",\"OFF\",\"ImL\",\"ImE\",\"-\",\"-\",\"ImL\",\"OFF\",\"OFF\",\"ImE\"],\"requests\":[false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAW\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"ImL\",\"ImE\",\"ImL\",\"-\",\"-\",\"-\",\"ImE\",\"ImE\",\"ImL\",\"ImE\",\"-\",\"-\",\"ImL\",\"ImE\",\"ImE\",\"ImE\",\"ImL\",\"-\",\"-\",\"ImE\",\"ImE\",\"ImL\",\"ImL\",\"ImE\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImE\",\"ImL\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAX\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[4,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"ImL\",\"OFF\",\"OFF\",\"-\",\"-\",\"-\",\"ImL\",\"ImL\",\"OFF\",\"OFF\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImL\",\"OFF\",\"OFF\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImE\",\"OFF\",\"OFF\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImE\",\"OFF\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAY\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"ImE\",\"ImL\",\"ImL\",\"-\",\"-\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImE\",\"-\",\"-\",\"-\",\"-\",\"ImE\",\"ImE\",\"ImL\",\"-\",\"-\",\"-\",\"-\",\"ImL\",\"ImL\",\"ImE\",\"-\",\"-\",\"-\",\"-\",\"ImE\",\"ImE\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],\"holidays\":[{\"d\":5,\"name\":\"Ostermontag\"}],\"lssDays\":[6,13,20],\"dailyComments\":[\"Month start \u2014 team briefing 08:00\",\"\",\"\",\"\",\"\",\"\ud83d\udc23 Ostermontag \u2014 holiday\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"Department meeting 14:00\",\"\",\"\",\"\",\"\",\"\",\"\",\"Safety training 09:00\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"dailyTargets\":[{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1}],\"masterTargets\":{\"wd8E\":5,\"wd8M\":2,\"wd8L\":5,\"wd13\":0,\"wd6\":0,\"we8E\":2,\"we8M\":1,\"we8L\":2,\"we13\":0,\"we6\":0,\"wdImE\":2,\"wdImL\":1},\"monthValue\":\"2026-04\",\"maxVac\":3,\"maxConsec\":5,\"minStaff\":5,\"use13H\":false,\"use6H\":true,\"currentLang\":\"en\",\"monthReady\":false},\"__workerRoster\":{\"workers\":[{\"name\":\"AAA\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAB\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"M\u00dcLLER C.\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAD\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAE\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAF\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":0,\"summerMonths\":[5,6,7,8]},{\"name\":\"AAG\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":1,\"summerMonths\":[5,6,7,8]},{\"name\":\"AAH\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":2,\"summerMonths\":[5,6,7,8]},{\"name\":\"AAI\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAJ\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAK\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAL\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAM\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAN\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[4],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAO\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAP\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1,4],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAQ\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAR\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[3,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAS\",\"system\":\"New\",\"contract\":\"22\",\"pref\":\"Early\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2,3],\"fixed6HDay\":1,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAT\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Early\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[3,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAU\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Late\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAV\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[2,3],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAW\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAX\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[4,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAY\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]}]}}";
+    var existing = localStorage.getItem('shiftPlannerAllMonthsV23');
+    if (existing) return; // never overwrite real user data
+    var seeded = "{\"2026-04\":{\"workers\":[{\"name\":\"AAA\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8L\",\"8E\",\"8M\",\"-\",\"-\",\"-\",\"8L\",\"8L\",\"8M\",\"8E\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"8E\",\"8M\",\"-\",\"-\",\"8E\",\"8L\",\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"VAC\",\"8E\",\"8L\",\"VAC\"],\"requests\":[true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAB\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"VAC\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"8M\",\"-\",\"-\",\"8E\",\"8E\",\"8E\",\"8L\",\"8E\",\"-\",\"-\",\"8L\",\"8M\",\"VAC\",\"8E\",\"8L\",\"-\",\"-\",\"8E\",\"8M\",\"8L\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"M\\u00dcLLER C.\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8M\",\"8L\",\"8E\",\"-\",\"-\",\"-\",\"8E\",\"8E\",\"SICK\",\"8L\",\"-\",\"-\",\"8M\",\"8L\",\"8L\",\"8E\",\"VAC\",\"-\",\"-\",\"8E\",\"8L\",\"VAC\",\"8L\",\"8L\",\"-\",\"-\",\"8E\",\"8E\",\"8L\",\"8M\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAD\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8L\",\"8E\",\"8E\",\"-\",\"-\",\"-\",\"8L\",\"8L\",\"8L\",\"8M\",\"-\",\"-\",\"8E\",\"VAC\",\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"VAC\",\"8E\",\"8E\",\"8L\",\"8M\",\"-\",\"-\",\"8E\",\"8L\",\"8M\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAE\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8L\",\"8L\",\"8M\",\"-\",\"-\",\"-\",\"8E\",\"VAC\",\"8M\",\"8L\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"8L\",\"8E\",\"-\",\"-\",\"8M\",\"8E\",\"8E\",\"8E\",\"VAC\",\"-\",\"-\",\"8M\",\"8L\",\"8M\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAF\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":0,\"summerMonths\":[5,6,7,8],\"shifts\":[\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8E\",\"8L\",\"8M\",\"-\",\"-\",\"8L\",\"VAC\",\"8L\",\"8M\",\"8E\",\"-\",\"-\",\"8E\",\"8L\",\"8E\",\"8E\",\"8M\",\"-\",\"-\",\"VAC\",\"8L\",\"8E\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAG\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":1,\"summerMonths\":[5,6,7,8],\"shifts\":[\"VAC\",\"8L\",\"8E\",\"-\",\"-\",\"-\",\"8E\",\"8M\",\"8L\",\"8E\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"8E\",\"8M\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"VAC\",\"8E\",\"-\",\"-\",\"8E\",\"8M\",\"8L\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAH\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":2,\"summerMonths\":[5,6,7,8],\"shifts\":[\"8L\",\"8L\",\"8E\",\"-\",\"-\",\"-\",\"8M\",\"8L\",\"8L\",\"8M\",\"-\",\"-\",\"8E\",\"8E\",\"VAC\",\"8M\",\"8L\",\"-\",\"-\",\"VAC\",\"8E\",\"8L\",\"8E\",\"8M\",\"-\",\"-\",\"8L\",\"8E\",\"8E\",\"8L\"],\"requests\":[true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAI\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8E\",\"8L\",\"8L\",\"-\",\"-\",\"OFF\",\"8M\",\"8M\",\"8E\",\"8L\",\"-\",\"-\",\"OFF\",\"8E\",\"8E\",\"8L\",\"8E\",\"-\",\"-\",\"OFF\",\"8M\",\"8E\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAJ\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8M\",\"8E\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8M\",\"8L\",\"8E\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"8M\",\"8E\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"8L\",\"8E\",\"-\",\"-\",\"8M\",\"8E\",\"8E\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAK\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8M\",\"8L\",\"8L\",\"-\",\"-\",\"-\",\"8E\",\"8L\",\"8M\",\"8L\",\"-\",\"-\",\"8E\",\"8E\",\"8E\",\"8L\",\"8L\",\"-\",\"-\",\"8M\",\"8E\",\"8L\",\"8M\",\"8E\",\"-\",\"-\",\"8E\",\"8L\",\"8E\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAL\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"8L\",\"8M\",\"-\",\"-\",\"-\",\"8L\",\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"OFF\",\"8L\",\"8E\",\"VAC\",\"8L\",\"-\",\"-\",\"OFF\",\"8L\",\"8L\",\"8M\",\"VAC\",\"-\",\"-\",\"OFF\",\"8L\",\"8L\",\"8M\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAM\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"8M\",\"OFF\",\"-\",\"-\",\"-\",\"8E\",\"8L\",\"8L\",\"OFF\",\"-\",\"-\",\"8E\",\"8E\",\"VAC\",\"8E\",\"OFF\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"VAC\",\"OFF\",\"-\",\"-\",\"8E\",\"8E\",\"8L\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAN\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[4],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"VAC\",\"OFF\",\"8L\",\"-\",\"-\",\"-\",\"8M\",\"8L\",\"OFF\",\"8M\",\"-\",\"-\",\"8E\",\"8E\",\"VAC\",\"OFF\",\"8L\",\"-\",\"-\",\"8L\",\"8E\",\"8L\",\"OFF\",\"8E\",\"-\",\"-\",\"8L\",\"8M\",\"8L\",\"OFF\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAO\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"8E\",\"8M\",\"8L\",\"-\",\"-\",\"-\",\"OFF\",\"VAC\",\"VAC\",\"8E\",\"-\",\"-\",\"SICK\",\"OFF\",\"8L\",\"8M\",\"8L\",\"-\",\"-\",\"8E\",\"OFF\",\"8E\",\"8L\",\"8M\",\"-\",\"-\",\"8L\",\"OFF\",\"8L\",\"8E\"],\"requests\":[true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAP\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1,4],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"VAC\",\"OFF\",\"8L\",\"-\",\"-\",\"-\",\"8M\",\"8E\",\"OFF\",\"8E\",\"-\",\"-\",\"OFF\",\"VAC\",\"8E\",\"OFF\",\"8L\",\"-\",\"-\",\"OFF\",\"8L\",\"8M\",\"OFF\",\"8E\",\"-\",\"-\",\"OFF\",\"8E\",\"8M\",\"OFF\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAQ\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"VAC\",\"8L\",\"OFF\",\"-\",\"-\",\"-\",\"OFF\",\"8E\",\"8E\",\"OFF\",\"-\",\"-\",\"8M\",\"OFF\",\"VAC\",\"8L\",\"OFF\",\"-\",\"-\",\"8M\",\"OFF\",\"8M\",\"8L\",\"OFF\",\"-\",\"-\",\"8E\",\"OFF\",\"8M\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAR\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[3,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"OFF\",\"8L\",\"OFF\",\"-\",\"-\",\"-\",\"8E\",\"OFF\",\"VAC\",\"OFF\",\"-\",\"-\",\"8E\",\"VAC\",\"OFF\",\"8L\",\"OFF\",\"-\",\"-\",\"8M\",\"8E\",\"OFF\",\"8L\",\"OFF\",\"-\",\"-\",\"8M\",\"8E\",\"OFF\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAS\",\"system\":\"New\",\"contract\":\"22\",\"pref\":\"Early\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2,3],\"fixed6HDay\":1,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"OFF\",\"8E\",\"8E\",\"-\",\"-\",\"-\",\"OFF\",\"OFF\",\"8E\",\"8E\",\"-\",\"-\",\"6H\",\"OFF\",\"OFF\",\"8E\",\"8E\",\"-\",\"-\",\"6H\",\"OFF\",\"OFF\",\"8E\",\"8E\",\"-\",\"-\",\"6H\",\"OFF\",\"OFF\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAT\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Early\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[3,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"OFF\",\"8E\",\"OFF\",\"-\",\"-\",\"-\",\"8E\",\"OFF\",\"8E\",\"OFF\",\"-\",\"-\",\"8E\",\"8M\",\"OFF\",\"8M\",\"OFF\",\"-\",\"-\",\"8E\",\"8E\",\"OFF\",\"VAC\",\"OFF\",\"-\",\"-\",\"8E\",\"VAC\",\"OFF\",\"8E\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAU\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Late\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"VAC\",\"8L\",\"8L\",\"-\",\"-\",\"-\",\"8L\",\"8L\",\"8L\",\"8L\",\"-\",\"-\",\"8M\",\"8L\",\"8L\",\"8M\",\"8L\",\"-\",\"-\",\"8L\",\"8L\",\"8M\",\"8L\",\"VAC\",\"-\",\"-\",\"8L\",\"8L\",\"SICK\",\"8L\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAV\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[2,3],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"OFF\",\"ImL\",\"ImL\",\"-\",\"-\",\"-\",\"OFF\",\"OFF\",\"ImL\",\"ImE\",\"-\",\"-\",\"ImE\",\"OFF\",\"OFF\",\"ImL\",\"ImL\",\"-\",\"-\",\"ImL\",\"OFF\",\"OFF\",\"ImL\",\"ImE\",\"-\",\"-\",\"ImL\",\"OFF\",\"OFF\",\"ImE\"],\"requests\":[false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAW\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"ImL\",\"ImE\",\"ImL\",\"-\",\"-\",\"-\",\"ImE\",\"ImE\",\"ImL\",\"ImE\",\"-\",\"-\",\"ImL\",\"ImE\",\"ImE\",\"ImE\",\"ImL\",\"-\",\"-\",\"ImE\",\"ImE\",\"ImL\",\"ImL\",\"ImE\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImE\",\"ImL\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAX\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[4,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"ImL\",\"OFF\",\"OFF\",\"-\",\"-\",\"-\",\"ImL\",\"ImL\",\"OFF\",\"OFF\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImL\",\"OFF\",\"OFF\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImE\",\"OFF\",\"OFF\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImE\",\"OFF\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{\"name\":\"AAY\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[],\"shifts\":[\"ImE\",\"ImL\",\"ImL\",\"-\",\"-\",\"-\",\"-\",\"ImE\",\"ImL\",\"ImE\",\"-\",\"-\",\"-\",\"-\",\"ImE\",\"ImE\",\"ImL\",\"-\",\"-\",\"-\",\"-\",\"ImL\",\"ImL\",\"ImE\",\"-\",\"-\",\"-\",\"-\",\"ImE\",\"ImE\"],\"requests\":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],\"holidays\":[{\"d\":5,\"name\":\"Ostermontag\"}],\"lssDays\":[6,13,20],\"dailyComments\":[\"Month start \u2014 team briefing 08:00\",\"\",\"\",\"\",\"\",\"\ud83d\udc23 Ostermontag \u2014 holiday\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"Department meeting 14:00\",\"\",\"\",\"\",\"\",\"\",\"\",\"Safety training 09:00\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"dailyTargets\":[{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":2,\"t8M\":1,\"t8L\":2,\"t13\":0,\"t6\":0,\"tImE\":0,\"tImL\":0},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1},{\"t8E\":5,\"t8M\":2,\"t8L\":5,\"t13\":0,\"t6\":0,\"tImE\":2,\"tImL\":1}],\"masterTargets\":{\"wd8E\":5,\"wd8M\":2,\"wd8L\":5,\"wd13\":0,\"wd6\":0,\"we8E\":2,\"we8M\":1,\"we8L\":2,\"we13\":0,\"we6\":0,\"wdImE\":2,\"wdImL\":1},\"monthValue\":\"2026-04\",\"maxVac\":3,\"maxConsec\":5,\"minStaff\":5,\"use13H\":false,\"use6H\":true,\"currentLang\":\"en\",\"monthReady\":false},\"__workerRoster\":{\"workers\":[{\"name\":\"AAA\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAB\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"M\\u00dcLLER C.\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAD\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAE\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAF\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":0,\"summerMonths\":[5,6,7,8]},{\"name\":\"AAG\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":1,\"summerMonths\":[5,6,7,8]},{\"name\":\"AAH\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"var1\",\"summerWeekOffset\":2,\"summerMonths\":[5,6,7,8]},{\"name\":\"AAI\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAJ\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAK\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Jump\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAL\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAM\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAN\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[4],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAO\",\"system\":\"New\",\"contract\":\"32\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAP\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[1,4],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAQ\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAR\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[3,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAS\",\"system\":\"New\",\"contract\":\"22\",\"pref\":\"Early\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[2,3],\"fixed6HDay\":1,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAT\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Early\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[3,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAU\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Late\",\"immo\":\"None\",\"immoShiftPref\":null,\"immoEarlyPct\":null,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAV\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[2,3],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAW\",\"system\":\"New\",\"contract\":\"40\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAX\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[4,5],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]},{\"name\":\"AAY\",\"system\":\"New\",\"contract\":\"24\",\"pref\":\"Any\",\"immo\":\"Fixed\",\"immoShiftPref\":\"Mixed\",\"immoEarlyPct\":60,\"fixedOff\":[],\"fixed6HDay\":null,\"summerMode\":\"none\",\"summerWeekOffset\":0,\"summerMonths\":[]}]}}";
     localStorage.setItem('shiftPlannerAllMonthsV23', seeded);
   } catch(e) {}
   var s = document.getElementById('__demo_seed__');
   if (s) s.parentNode.removeChild(s);
 })();
 </script>
-
+</head>
+<body>
 
 <!-- Init error bar — hidden unless onload crashes -->
 <div id="initErrorBar" style="display:none; background:#c0392b; color:white; padding:10px 16px; font-size:13px; font-weight:bold; position:fixed; top:0; left:0; right:0; z-index:9999; cursor:pointer;" onclick="this.style.display='none'">❌ Loading error — click to dismiss</div>
 
-<h1 id="pageTitle" class="no-print" style="display:inline-block; margin-right:16px;" data-month="">Shift Planner V2 — Demo</h1>
+<h1 id="pageTitle" class="no-print" style="display:inline-block; margin-right:16px;" data-month="">Shift Planner V2</h1>
 
 <!-- ═══ MOBILE VIEW ═══ -->
 <div id="mobileView">
     <div class="mob-header">
-        <h2>📅 Shift Planner V2 — Demo</h2>
+        <h2>📅 Shift Planner V2</h2>
         <p id="mobMonthLabel">Loading...</p>
     </div>
     <div class="mob-month-nav">
@@ -948,6 +949,9 @@
                         oninput="liveUpdatePAT(this.value)"
                         style="width:100%; box-sizing:border-box; padding:6px; font-size:12px; border:1px solid #aaa; border-radius:4px;">
                     <small id="spFileNameStatus" style="color:#1a7f37; display:none;">✔ PAT updated</small>
+                    <div id="patWriteWarn" style="display:none; margin-top:5px; padding:6px 8px; background:#fff3cd; border:1px solid #ffc107; border-radius:4px; font-size:11px; color:#856404;">
+                        ⚠️ <strong>Security notice:</strong> This PAT is stored in your browser's <code>localStorage</code> only — it is never embedded in the HTML file. However, any JavaScript running on this page can read <code>localStorage</code>. Use the minimum required scope (<em>Contents: Read &amp; Write</em>) and rotate the token regularly.
+                    </div>
                     <small style="color:#666;">
                         Create at <strong>GitHub → Settings → Developer settings → Personal access tokens → Fine-grained</strong><br>
                         Needs <em>Contents: Read &amp; Write</em> permission on this repo. Stored only in your browser's localStorage.
@@ -1034,6 +1038,9 @@
                 <label style="font-size:11px; font-weight:bold; display:block; margin-bottom:2px;">Shared Comments Token (PAT)</label>
                 <input id="cmtSharedToken" type="password" placeholder="ghp_xxxxxxxxxxxx (paste once, then re-download HTML)"
                     style="width:100%; box-sizing:border-box; padding:6px; font-size:12px; border:1px solid #aaa; border-radius:4px;">
+                <div style="margin-top:5px; padding:6px 8px; background:#ffeaea; border:1px solid #f5c6cb; border-radius:4px; font-size:11px; color:#721c24;">
+                        🔴 <strong>Write-capable PAT warning:</strong> This token is <strong>baked into the HTML file</strong> and distributed to every user. Anyone who views the page source can read it. <strong>Never paste a write-capable PAT here</strong> unless you accept that all users can push to your repo. Use a dedicated read-only or comments-only scoped token whenever possible.
+                    </div>
                 <small style="color:#666;">This token is embedded in the HTML file itself — not stored in localStorage. It can be read-only or read-write.</small>
             </div>
 
@@ -1235,43 +1242,87 @@ let spConfig = { siteUrl:'', folderPath:'', fileName:'', autoSync:false };
 // All JSON files stored on GitHub are AES-encrypted with this shared password.
 // Everyone who can access the app needs to know it. Completely separate from
 // the admin/editor login passwords.
-let dataPassword = ''; // set via setup popup or settings; stored in localStorage
+let dataPassword = ''; // held in memory only — never stored in plaintext
 
-function encryptData(plainText) {
-    if (!dataPassword) return plainText; // no password = no encryption (fallback)
+// ── Helpers ──────────────────────────────────────────────
+const _toHex = arr => Array.from(arr).map(b => b.toString(16).padStart(2,'0')).join('');
+const _fromHex = h => new Uint8Array(h.match(/.{2}/g).map(b => parseInt(b,16)));
+const _toB64  = buf => btoa(String.fromCharCode(...new Uint8Array(buf)));
+const _fromB64 = s  => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+
+// Derive a 256-bit AES-GCM key from a password + salt via PBKDF2 (200k iterations, SHA-256)
+async function _deriveKey(password, salt) {
+    const km = await crypto.subtle.importKey(
+        'raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveKey']);
+    return crypto.subtle.deriveKey(
+        { name: 'PBKDF2', salt, iterations: 200000, hash: 'SHA-256' },
+        km, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']);
+}
+
+// Encrypt with AES-GCM + PBKDF2 key derivation
+// Output: { v:2, salt:<hex>, iv:<hex>, data:<base64> }
+async function encryptData(plainText) {
+    if (!dataPassword) return plainText;
     try {
-        return JSON.stringify({ encrypted: CryptoJS.AES.encrypt(plainText, dataPassword).toString() });
+        const salt = crypto.getRandomValues(new Uint8Array(16));
+        const iv   = crypto.getRandomValues(new Uint8Array(12));
+        const key  = await _deriveKey(dataPassword, salt);
+        const enc  = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key,
+                         new TextEncoder().encode(plainText));
+        return JSON.stringify({ v: 2, salt: _toHex(salt), iv: _toHex(iv), data: _toB64(enc) });
     } catch(e) { console.warn('Encrypt failed:', e); return plainText; }
 }
 
-function decryptData(text) {
+// Decrypt — handles v2 (AES-GCM/PBKDF2), v1 legacy (CryptoJS/EvpKDF), and plaintext
+async function decryptData(text) {
     if (!text) return text;
     try {
         const obj = JSON.parse(text);
+        // ── v2: AES-GCM + PBKDF2 ──
+        if (obj && obj.v === 2 && obj.salt && obj.iv && obj.data) {
+            if (!dataPassword) throw new Error('Data is encrypted — enter the data password first.');
+            const key = await _deriveKey(dataPassword, _fromHex(obj.salt));
+            const dec = await crypto.subtle.decrypt(
+                { name: 'AES-GCM', iv: _fromHex(obj.iv) }, key, _fromB64(obj.data));
+            return new TextDecoder().decode(dec);
+        }
+        // ── v1 legacy: CryptoJS AES (read-only — old data migrates on next push) ──
         if (obj && obj.encrypted) {
             if (!dataPassword) throw new Error('Data is encrypted — enter the data password first.');
             const bytes = CryptoJS.AES.decrypt(obj.encrypted, dataPassword);
-            const dec = bytes.toString(CryptoJS.enc.Utf8);
+            const dec   = bytes.toString(CryptoJS.enc.Utf8);
             if (!dec) throw new Error('Wrong data password — decryption produced empty result.');
             return dec;
         }
     } catch(e) {
-        if (e.message.includes('encrypted') || e.message.includes('password')) throw e;
-        // Not JSON or not encrypted object — return as-is (plain text fallback)
+        if (e.message && (e.message.includes('encrypted') || e.message.includes('password'))) throw e;
     }
-    return text; // unencrypted data (legacy / first run)
+    return text; // unencrypted / plain JSON fallback
 }
 
+// Data password lives in sessionStorage only (cleared when the tab closes).
+// The plaintext is never written to localStorage.
 function loadDataPassword() {
     try {
-        const saved = localStorage.getItem('shiftPlannerDataPwd');
+        // Migrate away from old localStorage entry if present
+        const legacy = localStorage.getItem('shiftPlannerDataPwd');
+        if (legacy) {
+            dataPassword = legacy;
+            sessionStorage.setItem('shiftPlannerDataPwd', legacy);
+            localStorage.removeItem('shiftPlannerDataPwd'); // remove plaintext copy
+            return;
+        }
+        const saved = sessionStorage.getItem('shiftPlannerDataPwd');
         if (saved) dataPassword = saved;
     } catch(e) {}
 }
 
 function saveDataPassword(pwd) {
     dataPassword = pwd;
-    try { localStorage.setItem('shiftPlannerDataPwd', pwd); } catch(e) {}
+    try {
+        sessionStorage.setItem('shiftPlannerDataPwd', pwd);
+        localStorage.removeItem('shiftPlannerDataPwd'); // keep localStorage clean
+    } catch(e) {}
 }
 
 // ── Shared comment token — admin embeds this once so all viewers can push comments ──
@@ -1293,8 +1344,8 @@ let commentSyncDebounceTimer = null;
 let currentRole = 'viewer';
 let isEditMode  = false;
 let pwHash      = null;   // kept for compat — now = adminHash
-let adminHash   = null;
-let editorHash  = null;
+let adminHash   = null; // __BAKE_ADMIN_HASH__
+let editorHash  = null; // __BAKE_EDITOR_HASH__
 let spCfgFile   = 'shiftplanner_config.json';
 let loginTab    = 'editor'; // which tab is active in login modal
 
@@ -1743,34 +1794,8 @@ function initTargets() {
 }
 
 function loadTestWorkers() {
-    workerRoster = [
-        {name:"AAA",system:"New",contract:"40",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAB",system:"New",contract:"40",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAC",system:"New",contract:"40",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAD",system:"New",contract:"40",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAE",system:"New",contract:"40",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAF",system:"New",contract:"40",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"var1",summerMonths:[5, 6, 7, 8],summerWeek:0},
-        {name:"AAG",system:"New",contract:"40",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"var1",summerMonths:[5, 6, 7, 8],summerWeek:1},
-        {name:"AAH",system:"New",contract:"40",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"var1",summerMonths:[5, 6, 7, 8],summerWeek:2},
-        {name:"AAI",system:"New",contract:"32",pref:"Any",immo:"Jump",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[1],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAJ",system:"New",contract:"40",pref:"Any",immo:"Jump",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAK",system:"New",contract:"40",pref:"Any",immo:"Jump",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAL",system:"New",contract:"32",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[1],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAM",system:"New",contract:"32",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[5],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAN",system:"New",contract:"32",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[4],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAO",system:"New",contract:"32",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[2],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAP",system:"New",contract:"24",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[1, 4],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAQ",system:"New",contract:"24",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[2, 5],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAR",system:"New",contract:"24",pref:"Any",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[3, 5],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAS",system:"New",contract:"22",pref:"Early",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:1,fixedOff:[2, 3],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAT",system:"New",contract:"24",pref:"Early",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[3, 5],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAU",system:"New",contract:"40",pref:"Late",immo:"None",immoShiftPref:null,immoEarlyPct:null,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAV",system:"New",contract:"40",pref:"Any",immo:"Fixed",immoShiftPref:"Mixed",immoEarlyPct:60,fixed6HDay:null,fixedOff:[2, 3],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAW",system:"New",contract:"40",pref:"Any",immo:"Fixed",immoShiftPref:"Mixed",immoEarlyPct:60,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAX",system:"New",contract:"24",pref:"Any",immo:"Fixed",immoShiftPref:"Mixed",immoEarlyPct:60,fixed6HDay:null,fixedOff:[4, 5],summerMode:"none",summerMonths:[],summerWeek:0},
-        {name:"AAY",system:"New",contract:"24",pref:"Any",immo:"Fixed",immoShiftPref:"Mixed",immoEarlyPct:60,fixed6HDay:null,fixedOff:[],summerMode:"none",summerMonths:[],summerWeek:0}
-    ];
-    if (typeof daysInMonth !== 'undefined') workers = workersFromRoster(daysInMonth);
+    workers = [];
+    // No demo workers — add your real team using the Add Worker panel above.
 }
 
 function toggle13HShift() {
@@ -1877,7 +1902,7 @@ function changeMonth(isInit=false) {
     setTimeout(() => cmtPull(true), 300);
 }
 
-function refreshBoard() { saveData(); renderTable(); }
+function refreshBoard() { saveData(); scheduleRenderTable(); }
 
 // ─────────────────────────────────────────────────────────
 //  Dark Mode
@@ -2057,7 +2082,7 @@ function getPrevMonthLastDays(workerName, numDays) {
 function updateDailyTarget(dIndex, type, value) {
     if (!requireEdit("Change Daily Target")) return;
     dailyTargets[dIndex][type] = parseInt(value) || 0;
-    saveData(); renderTable();
+    saveData(); scheduleRenderTable();
 }
 
 // ─────────────────────────────────────────────────────────
@@ -2270,6 +2295,21 @@ function saveEditWorker() {
 }
 
 // ─────────────────────────────────────────────────────────
+//  Debounced render — prevents UI freeze on rapid dropdown
+//  changes by deferring the full table rebuild to the next
+//  event-loop tick and collapsing back-to-back calls.
+// ─────────────────────────────────────────────────────────
+let _renderScheduled = false;
+function scheduleRenderTable() {
+    if (_renderScheduled) return;
+    _renderScheduled = true;
+    setTimeout(function () {
+        _renderScheduled = false;
+        renderTable();
+    }, 0);
+}
+
+// ─────────────────────────────────────────────────────────
 //  Update Daily Target (inline inputs in table)
 // ─────────────────────────────────────────────────────────
 
@@ -2280,8 +2320,7 @@ function updateShift(wIndex, dIndex, value) {
         finalValue = viewerShiftValueForSave(value);
     } else if (isPendingVacationShift(oldValue) && isVacationBase(stripPendingVacation(value))) { finalValue = stripPendingVacation(value); }
     pushUndo(); workers[wIndex].shifts[dIndex] = finalValue; saveData();
-    renderTable();
-    if ($('statsToggle') && $('statsToggle').checked) renderStats();
+    scheduleRenderTable();
 
     // ── Notifications ──
     const wasVacRequest = isPendingVacationShift(finalValue);
@@ -2317,7 +2356,7 @@ function updateShift(wIndex, dIndex, value) {
     }
 }
 
-function updateRequest(wIndex, dIndex, isChecked) { workers[wIndex].requests[dIndex]=isChecked; saveData(); renderTable(); }
+function updateRequest(wIndex, dIndex, isChecked) { workers[wIndex].requests[dIndex]=isChecked; saveData(); scheduleRenderTable(); }
 function updateComment(dIndex, text) { dailyComments[dIndex]=text; saveData(); scheduleCommentSync(); }
 
 function toggleHoliday(dIndex, el) {
@@ -2732,7 +2771,8 @@ function renderTable() {
         const isLSS    = lssDays.includes(d);
         const rowClass = isHol ? 'holiday-row' : (isWE ? 'weekend' : isLSS ? 'lss-row' : '');
 
-        bodyHTML += `<tr class="${rowClass}" data-day="${d}">__DATECELL_${d}__`;
+        bodyHTML += `<tr class="${rowClass}" data-day="${d}">`;
+        let rowWorkerCells = '';
 
         let c8E=0,c8M=0,c8L=0,c13H=0,c6H=0,cImE=0,cImL=0,vCount=0,sickCount=0,workingCount=0,cFB=0,cPF=0,cDF=0,cKrank=0;
         const sickNames=[], vacNames=[], fbNames=[], pfNames=[], dfNames=[], krankNames=[];
@@ -2829,7 +2869,7 @@ function renderTable() {
                 else if (isLSS) cellBg = '#e8f8e8';
             }
 
-            bodyHTML += `<td data-cell="${cellKey}" data-w="${wIndex}" class="${selClass}" onclick="handleCellClick(event,${wIndex},${d})" style="background-color:${cellBg};">
+            rowWorkerCells += `<td data-cell="${cellKey}" data-w="${wIndex}" class="${selClass}" onclick="handleCellClick(event,${wIndex},${d})" style="background-color:${cellBg};">
                 <select class="shift-select ${currentRole==='viewer' && viewerCanEditCell(shift) ? "viewer-vac-select" : ""} ${consecClass}" data-w="${wIndex}" data-d="${d}"
                     style="background-color:${cellBg}; ${textCol}"
                     onchange="updateShift(${wIndex},${d},this.value)">
@@ -2855,8 +2895,8 @@ function renderTable() {
             `${dayNames[dow]} ${d+1}.${minAlert?' ⚠'+workingCount:''}${holNameHtml}</td>`+
             `<td class="sticky-col no-print ${rowClass}"><input type="checkbox" ${isHol?'checked':''} onchange="toggleHoliday(${d},this)"></td>`+
             `<td class="sticky-col no-print ${rowClass}"><input type="checkbox" ${lssDays.includes(d)?'checked':''} onchange="toggleLSS(${d},this)"></td>`;
-        // Replace the placeholder we inserted when the row opened
-        bodyHTML = bodyHTML.replace(`__DATECELL_${d}__`, dateCellHtml);
+        // Append date cells first, then the pre-built worker cells (avoids scanning the full bodyHTML string)
+        bodyHTML += dateCellHtml + rowWorkerCells;
 
         // Shift count columns
         const tgt8E=dailyTargets[d].t8E, tgt8M=dailyTargets[d].t8M, tgt8L=dailyTargets[d].t8L;
@@ -4722,7 +4762,7 @@ async function downloadExcelWithFormulas() {
     // ── Legend sheet ──
     // Column A: notes. Column D onward: shift code list (used as dropdown source).
     const legendRows = [
-        [de?'Schichtplaner V1 – Export mit Formeln':'Shift Planner V2 — Demo – Formula Export'],
+        [de?'Schichtplaner V1 – Export mit Formeln':'Shift Planner V2 – Formula Export'],
         [monthTitle], [''],
         [de?'Hinweise':'Notes'],
         [de?'• Plan: Hauptblatt. Wenn Dienstcodes geändert werden, berechnen sich Summen automatisch neu.':'• Plan: Main sheet. Changing a shift code in any cell immediately recalculates all totals.'],
@@ -5404,8 +5444,22 @@ function downloadAsHTML() {
 
     let html = document.documentElement.outerHTML;
     // Bake current password hashes into downloaded HTML so new browsers are protected
-    if (adminHash)  html = html.replace(/let adminHash\s*=\s*null/, 'let adminHash = ' + JSON.stringify(adminHash));
-    if (editorHash) html = html.replace(/let editorHash\s*=\s*null/, 'let editorHash = ' + JSON.stringify(editorHash));
+    // Bake password hashes using exact sentinel markers — immune to minification or variable reordering
+    const ADMIN_SENTINEL  = 'let adminHash   = null; // __BAKE_ADMIN_HASH__';
+    const EDITOR_SENTINEL = 'let editorHash  = null; // __BAKE_EDITOR_HASH__';
+    if (adminHash && html.includes(ADMIN_SENTINEL)) {
+        html = html.replace(ADMIN_SENTINEL, 'let adminHash   = ' + JSON.stringify(adminHash) + '; // __BAKE_ADMIN_HASH__');
+    } else if (adminHash) {
+        // Sentinel missing — fall back to regex and log a warning
+        console.warn('[ShiftPlanner] Admin hash sentinel not found — falling back to regex bake-in.');
+        html = html.replace(/let adminHash\s*=\s*null/, 'let adminHash = ' + JSON.stringify(adminHash));
+    }
+    if (editorHash && html.includes(EDITOR_SENTINEL)) {
+        html = html.replace(EDITOR_SENTINEL, 'let editorHash  = ' + JSON.stringify(editorHash) + '; // __BAKE_EDITOR_HASH__');
+    } else if (editorHash) {
+        console.warn('[ShiftPlanner] Editor hash sentinel not found — falling back to regex bake-in.');
+        html = html.replace(/let editorHash\s*=\s*null/, 'let editorHash = ' + JSON.stringify(editorHash));
+    }
     // Insert seed script just before </head>
     html = html.replace('</head>', seedScript + '\n</head>');
 
@@ -5489,7 +5543,7 @@ function copyColorfulExcel() {
 // ─────────────────────────────────────────────────────────
 const T = {
   en: {
-    pageTitle:      'Shift Planner V2 — Demo',
+    pageTitle:      'Shift Planner V2',
     langBtn:        '🌐 Deutsch',
     months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
     p1title:        '1. Setup & Action',
@@ -5551,7 +5605,7 @@ const T = {
     helpContent:    getHelpContent('en'),
   },
   de: {
-    pageTitle:      'Dienstplaner V2 — Demo',
+    pageTitle:      'Dienstplaner V2',
     langBtn:        '🌐 English',
     months: ['Jänner','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'],
     p1title:        '1. Einrichtung & Aktionen',
@@ -5867,8 +5921,37 @@ function applyLang() {
 //  Edit-Mode Lock / Unlock
 // ─────────────────────────────────────────────────────────
 
+// ── Login password hashing — PBKDF2 (200k iterations, SHA-256, random 16-byte salt) ──
+// Stored format: "<saltHex>:<hashHex>"  (64+1+64 = 129 chars)
+// Legacy format (no colon): plain SHA-256 hex — still verified for backward compat
+
+async function pbkdf2LoginHash(password, saltHex) {
+    const salt = saltHex ? _fromHex(saltHex)
+                         : crypto.getRandomValues(new Uint8Array(16));
+    const km = await crypto.subtle.importKey(
+        'raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits']);
+    const bits = await crypto.subtle.deriveBits(
+        { name: 'PBKDF2', salt, iterations: 200000, hash: 'SHA-256' }, km, 256);
+    return _toHex(salt) + ':' + _toHex(new Uint8Array(bits));
+}
+
+async function verifyLoginHash(password, stored) {
+    if (!stored) return false;
+    if (stored.includes(':')) {
+        // New PBKDF2 format: "<salt>:<hash>"
+        const [saltHex, hashHex] = stored.split(':');
+        const computed = await pbkdf2LoginHash(password, saltHex);
+        const [, computedHash] = computed.split(':');
+        return computedHash === hashHex;
+    }
+    // Legacy: plain SHA-256 (no salt) — accept but flag for upgrade
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(password));
+    return _toHex(new Uint8Array(buf)) === stored;
+}
+
+// Keep sha256 available for any other non-auth uses (e.g. GitHub file SHA)
 async function sha256(str) {
-    const buf  = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
     return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
 }
 
@@ -5914,6 +5997,13 @@ function switchLoginTab(tab) {
     }
 }
 
+// ── Brute-force protection ──────────────────────────────────
+let _loginFailCount  = 0;
+let _loginLockUntil  = 0;
+const _LOGIN_MAX_TRIES = 5;     // attempts before lockout
+const _LOGIN_LOCKOUT_MS = 30000; // 30 s base lockout (doubles each subsequent trigger)
+let _loginLockMultiplier = 1;
+
 function toggleLock() {
     if (currentRole !== 'viewer') {
         // Log out → back to viewer
@@ -5937,33 +6027,62 @@ function toggleLock() {
 }
 
 async function attemptUnlock() {
-    const input = $('unlockInput').value;
-    const hash  = await sha256(input);
     const errEl = $('unlockError');
 
-    if (loginTab === 'admin' && adminHash && hash === adminHash) {
-        currentRole = 'admin';
-        pwHash = adminHash; // compat
-        applyLockState();
+    // ── Lockout check ──
+    const now = Date.now();
+    if (now < _loginLockUntil) {
+        const secs = Math.ceil((_loginLockUntil - now) / 1000);
+        errEl.textContent = `⏳ Too many failed attempts — wait ${secs}s before trying again.`;
+        errEl.style.display = 'block';
+        return;
+    }
+
+    const input = $('unlockInput').value;
+    errEl.style.display = 'none';
+
+    let success = false;
+    if (loginTab === 'admin'  && adminHash  && await verifyLoginHash(input, adminHash)) {
+        currentRole = 'admin'; pwHash = adminHash; applyLockState();
         $('unlockModal').style.display = 'none';
         $('unlockInput').value = '';
-        errEl.style.display = 'none';
-    } else if (loginTab === 'editor' && editorHash && hash === editorHash) {
-        currentRole = 'editor';
-        applyLockState();
+        // Upgrade legacy SHA-256 hash to PBKDF2 silently if user is admin
+        if (adminHash && !adminHash.includes(':')) {
+            pbkdf2LoginHash(input).then(h => { adminHash = h; });
+        }
+        success = true;
+    } else if (loginTab === 'editor' && editorHash && await verifyLoginHash(input, editorHash)) {
+        currentRole = 'editor'; applyLockState();
         $('unlockModal').style.display = 'none';
         $('unlockInput').value = '';
-        errEl.style.display = 'none';
-    } else if (loginTab === 'admin' && adminHash && hash === editorHash) {
-        // Typed editor password in admin tab - redirect
+        // Upgrade legacy SHA-256 hash to PBKDF2 silently if editor is on old format
+        if (editorHash && !editorHash.includes(':')) {
+            pbkdf2LoginHash(input).then(h => { editorHash = h; });
+        }
+        success = true;
+    } else if (loginTab === 'admin' && adminHash && editorHash && await verifyLoginHash(input, editorHash)) {
         errEl.textContent = '❌ That is the Editor password. Switch to the Editor tab.';
         errEl.style.display = 'block';
         $('unlockInput').value = '';
-    } else {
-        errEl.textContent = '❌ Incorrect password. Try again.';
+        // counts as a failed attempt to prevent tab-guessing as an oracle
+    }
+
+    if (!success) {
+        _loginFailCount++;
+        if (_loginFailCount >= _LOGIN_MAX_TRIES) {
+            _loginLockUntil = Date.now() + _LOGIN_LOCKOUT_MS * _loginLockMultiplier;
+            _loginLockMultiplier = Math.min(_loginLockMultiplier * 2, 32); // cap at 32× = ~16 min
+            _loginFailCount = 0;
+            errEl.textContent = `🔒 ${_LOGIN_MAX_TRIES} failed attempts — locked out for ${_LOGIN_LOCKOUT_MS * (_loginLockMultiplier/2) / 1000}s.`;
+        } else if (!errEl.style.display || errEl.style.display === 'none') {
+            errEl.textContent = `❌ Incorrect password. ${_LOGIN_MAX_TRIES - _loginFailCount} attempt(s) remaining.`;
+        }
         errEl.style.display = 'block';
         $('unlockInput').value = '';
         $('unlockInput').focus();
+    } else {
+        _loginFailCount = 0;
+        _loginLockMultiplier = 1;
     }
 }
 
@@ -6011,8 +6130,8 @@ async function saveAllPasswords() {
     // Validate
     if (a1 && a1 !== a2) { err.textContent = '⚠️ Admin passwords do not match.'; err.style.display='block'; return; }
     if (e1 && e1 !== e2) { err.textContent = '⚠️ Editor passwords do not match.'; err.style.display='block'; return; }
-    if (a1 && a1.length < 4) { err.textContent = '⚠️ Admin password must be at least 4 characters.'; err.style.display='block'; return; }
-    if (e1 && e1.length < 4) { err.textContent = '⚠️ Editor password must be at least 4 characters.'; err.style.display='block'; return; }
+    if (a1 && a1.length < 8) { err.textContent = '⚠️ Admin password must be at least 8 characters.'; err.style.display='block'; return; }
+    if (e1 && e1.length < 8) { err.textContent = '⚠️ Editor password must be at least 8 characters.'; err.style.display='block'; return; }
     if (!a1 && !e1) { err.textContent = '⚠️ Enter at least one password to save.'; err.style.display='block'; return; }
 
     try {
@@ -6023,8 +6142,8 @@ async function saveAllPasswords() {
             if (existing) cfg = JSON.parse(existing);
         } catch(e) {}
 
-        if (a1) { cfg.adminHash  = await sha256(a1); adminHash  = cfg.adminHash; pwHash = cfg.adminHash; }
-        if (e1) { cfg.editorHash = await sha256(e1); editorHash = cfg.editorHash; }
+        if (a1) { cfg.adminHash  = await pbkdf2LoginHash(a1); adminHash  = cfg.adminHash; pwHash = cfg.adminHash; }
+        if (e1) { cfg.editorHash = await pbkdf2LoginHash(e1); editorHash = cfg.editorHash; }
         cfg.version = 2;
 
         await ghWriteFile(spCfgFile, JSON.stringify(cfg, null, 2));
@@ -6089,7 +6208,7 @@ async function ghReadFile(file) {
                 // ── Cache SHA for conflict detection ──
                 window._shaCache[file] = data.sha;
                 const text = decodeURIComponent(escape(atob(data.content.replace(/\n/g,''))));
-                return decryptData(text);
+                return await decryptData(text);
             }
             if (r.status === 404) return null;
             // non-404 error → fall through to raw URL attempt
@@ -6106,7 +6225,7 @@ async function ghReadFile(file) {
             const rr = await fetch(rawUrl);
             if (rr.ok) {
                 const text = await rr.text();
-                return decryptData(text);
+                return await decryptData(text);
             }
         } catch(e) {
             if (e.message && (e.message.includes('encrypted') || e.message.includes('password'))) throw e;
@@ -6118,7 +6237,7 @@ async function ghReadFile(file) {
 // Write a file to GitHub (create or update)
 async function ghWriteFile(file, content, commitMsg) {
     // Encrypt before pushing if data password is set
-    const payload = encryptData(content);
+    const payload = await encryptData(content);
 
     // ── Use the SHA we cached when we last READ this file ──
     // If someone else pushed between our last read and now, GitHub will
@@ -6487,9 +6606,9 @@ async function cmtPull(silent = false) {
         return;
     }
     try {
-        const text = await ghReadFileWith('shiftplanner_comments.json', cmtToken());
-        if (text === null) return; // file doesn't exist yet — no comments to load
-
+        const raw = await ghReadFileWith('shiftplanner_comments.json', cmtToken());
+        if (raw === null) return; // file doesn't exist yet — no comments to load
+        const text = await decryptData(raw);
         const remote = JSON.parse(text);
 
         // Update live dailyComments for current month if present
@@ -6537,13 +6656,14 @@ function resolveConflict(choice) {
     // Update baseline with resolved value
     if (_baseComments) _baseComments[dayIndex] = mergedData[currentMonthKey][dayIndex];
 
-    // Now write the resolved data
+    // Now write the resolved data (encrypted if data password is set)
+    encryptData(JSON.stringify(mergedData, null, 2)).then(payload =>
     ghWriteFileWith(
         'shiftplanner_comments.json',
-        JSON.stringify(mergedData, null, 2),
+        payload,
         token,
         `Comments update · ${currentMonthKey} · ${new Date().toISOString()}`
-    ).then(() => {
+    )).then(() => {
         cmtShowStatus(`✅ Conflict resolved & saved (${new Date().toLocaleTimeString()})`, '#e6ffe6', '#107c10');
     }).catch(e => {
         cmtShowStatus(`❌ Save failed after resolving: ${e.message}`, '#ffe6e6', '#c0392b');
@@ -6560,8 +6680,8 @@ async function cmtPush(silent = false) {
         // ── Step 1: Read the LATEST version from GitHub ──
         let existing = {};
         try {
-            const text = await ghReadFileWith('shiftplanner_comments.json', cmtToken());
-            if (text) existing = JSON.parse(text);
+            const raw = await ghReadFileWith('shiftplanner_comments.json', cmtToken());
+            if (raw) existing = JSON.parse(await decryptData(raw));
         } catch(e) { /* file may not exist yet */ }
 
         // ── Step 2: Cell-level merge ──
@@ -6607,10 +6727,10 @@ async function cmtPush(silent = false) {
 
         existing[currentMonthKey] = merged;
 
-        // ── Step 3: Write merged result ──
+        // ── Step 3: Write merged result (encrypted if data password is set) ──
         await ghWriteFileWith(
             'shiftplanner_comments.json',
-            JSON.stringify(existing, null, 2),
+            await encryptData(JSON.stringify(existing, null, 2)),
             cmtToken(),
             `Comments update · ${currentMonthKey} · ${new Date().toISOString()}`
         );
@@ -6741,6 +6861,9 @@ function liveUpdatePAT(value) {
     localStorage.setItem('shiftPlannerSPConfig', JSON.stringify(saved));
     const status = $('spFileNameStatus');
     if (status) { status.style.display = trimmed ? 'inline' : 'none'; }
+    // Show security warning whenever a PAT is present
+    const warn = $('patWriteWarn');
+    if (warn) { warn.style.display = trimmed ? 'block' : 'none'; }
 }
 
 function liveUpdateEncryption(value) {
@@ -7006,7 +7129,8 @@ function renderMobileView() {
                 if (o && c.siteUrl)    o.value = c.siteUrl;
                 if (r && c.folderPath) r.value = c.folderPath;
                 var dp = $('su_datapwd');
-                var savedPwd = localStorage.getItem('shiftPlannerDataPwd');
+                var savedPwd = sessionStorage.getItem('shiftPlannerDataPwd')
+                           || localStorage.getItem('shiftPlannerDataPwd');
                 if (dp && savedPwd) dp.value = savedPwd;
             } catch(e) {}
         }
@@ -7073,9 +7197,10 @@ function renderMobileView() {
             // Save GitHub config
             var cfg = { siteUrl: owner, folderPath: repo, fileName: token, autoSync: false };
             localStorage.setItem('shiftPlannerSPConfig', JSON.stringify(cfg));
-            // Save data password
+            // Save data password — use saveDataPassword so it goes to sessionStorage only
             var dpwd = ($('su_datapwd') || {value:''}).value.trim();
-            if (dpwd) localStorage.setItem('shiftPlannerDataPwd', dpwd);
+            if (dpwd && typeof saveDataPassword === 'function') saveDataPassword(dpwd);
+            else if (dpwd) sessionStorage.setItem('shiftPlannerDataPwd', dpwd);
             stat.textContent = 'Connected to ' + data.full_name + '! Loading config...';
             stat.style.display = 'block';
             btn.textContent = 'Connected!';
@@ -7338,7 +7463,7 @@ function renderMobileView() {
       worker.shifts[idx] = (viewerMode && typeof window.viewerShiftValueForSave === 'function') ? window.viewerShiftValueForSave(vacType) : vacType;
       changed++;
     }
-    if(changed > 0){ window.saveData(); window.renderTable(); }
+    if(changed > 0){ window.saveData(); if(typeof window.scheduleRenderTable === 'function') window.scheduleRenderTable(); else window.renderTable(); }
     if(res) res.textContent = 'Updated ' + changed + ' day(s). Skipped: ' + skipWeekend + ' weekend, ' + skipHoliday + ' holiday, ' + skipFixed + ' fixed day-off, ' + skipBusy + ' occupied, ' + skipMonth + ' outside this month.';
   };
 
@@ -7398,16 +7523,36 @@ function renderMobileView() {
     window.selectedCells.clear();
     const cnt = $('selectionCount');
     if(cnt) cnt.textContent = 0;
-    window.saveData(); window.renderTable();
+    window.saveData();
+    if(typeof window.scheduleRenderTable === 'function') window.scheduleRenderTable(); else window.renderTable();
     alert('Vacation requests added to ' + changed + ' cell(s). Skipped ' + skipped + ' locked/occupied cell(s).');
   };
+
+  // ── Caches for post-render hooks ──
+  // populateVacationRangeWorkerSelect: only rebuild when the worker name list changes
+  let _lastRosterFingerprint = '';
+  function _rosterFingerprint(){
+    return (window.workers || []).map(function(w){ return w.name; }).join(',');
+  }
+  // renderSyncStatusBadges: throttle to at most once every 3 seconds
+  let _lastBadgeRender = 0;
 
   const origRenderTable = window.renderTable;
   window.renderTable = function(){
     const r = origRenderTable.apply(this, arguments);
     ensureSelectModeButtonForViewer();
-    populateVacationRangeWorkerSelect();
-    renderSyncStatusBadges();
+    // Only rebuild vacation-worker select when the roster actually changed
+    const fp = _rosterFingerprint();
+    if(fp !== _lastRosterFingerprint){
+      _lastRosterFingerprint = fp;
+      populateVacationRangeWorkerSelect();
+    }
+    // Throttle badge bar — localStorage read + DOM write every render is wasteful
+    const now = Date.now();
+    if(now - _lastBadgeRender > 3000){
+      _lastBadgeRender = now;
+      renderSyncStatusBadges();
+    }
     updateSelectModeUI();
     return r;
   };
